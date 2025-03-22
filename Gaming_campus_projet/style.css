@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+.navbar {
+    max-width: 1200px;
+    width: 100%;
+    margin: 22px auto;
+}
+.navbar_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.navbar-item {
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.active {
+    position: relative;
+}
+.active::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    color: blue;
+    background-color: blue;
+
+}
+#language {
+    background-color: rgb(226, 221, 215);
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: upercase;
+    text-align: center;
+    padding: 8px 15px;
+    box-shadow: 0 1px 2px 0 rgb(226, 221, 215);
+}
+
+.main-header {
+    background-image: url("./assets/img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.logo {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.header-text {
+    text-align: center;
+    padding: 30px 0;
+}
+.header-title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.header-btn {
+    text-align: center;
+    padding: 15px 40px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* line-height: 1.4; */
+    background-color: transparent;
+    border-color: #ffffff;
+    transition: all .3s ease;
+    cursor: pointer;
+
+}
+.header-btn:hover{
+    background-color: rgb(121, 169, 114);
+    border: none;
+}
+.fa-angle-right {
+    padding-left: 7px;
+}
+@media screen and (max-width: 425px) {
+    body {
+        text-align: center;
+        font-weight: 200;
+    }
+    .navbar {
+        max-width: 320px;
+        /* margin: 10 auto; */
+    }
+    .navbar_list {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+}
