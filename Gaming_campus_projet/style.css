@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    height: 100vh;
+    width: 100vw;
+}
+.navbar {
+    max-width: 1200px;
+    width: 100%;
+    margin: 22px auto;
+}
+.navbar_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.navbar-item {
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.active {
+    position: relative;
+}
+.active::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    color: blue;
+    background-color: blue;
+
+}
+#language {
+    background-color: rgb(226, 221, 215);
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: upercase;
+    text-align: center;
+    padding: 8px 15px;
+    box-shadow: 0 1px 2px 0 rgb(226, 221, 215);
+}
+/* header{
+    position: relative;
+} */
+
+.main-header {
+    background-image: url("./assets/img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background-attachment: fixed;
+}
+.logo {
+    text-align: center;
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.header-text {
+    text-align: center;
+    padding: 30px 0;
+}
+.header-title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.header-btn {
+    text-align: center;
+    padding: 15px 40px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* line-height: 1.4; */
+    background-color: transparent;
+    border-color: #ffffff;
+    transition: all .3s ease;
+    cursor: pointer;
+
+}
+.header-btn:hover{
+    background-color: rgb(121, 169, 114);
+    border: none;
+}
+.fa-angle-right {
+    padding-left: 7px;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.professinnel-info {
+    text-align: center;
+    margin: 40px 0;
+}
+.professinnel-info p {
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+
+.icon-part{
+    background-color: rgb(38, 35, 35);
+    width: 100vw;
+}
+.icon-part-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    /* margin-top: 35px; */
+}
+.list-icon-part{
+    margin: 50px 0;
+    color: #ffffff;
+    text-align: center;
+}
+.lip-logo {
+    display: flex;
+    justify-content: center;
+}
+.list-icon-part h3 {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.list-icon-part p {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+.list-icon-part button {
+    margin-top: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    padding: 15px 30px;
+    color: #f7f1f1;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.list-icon-part button:hover{
+    border: none;
+    background-color: rgb(121, 169, 114);
+}
+
+.news-part {
+    background-color: rgb(245 241 235);
+    width: 100vw;
+}
+.header-news {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    column-gap: 15px;
+    padding-top: 50px;
+}
+.left-part h2 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: rgb(22, 21, 21);
+    /* line-height: 1.2px; */
+}
+.left-part p {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: rgb(22, 21, 21);
+    font-weight: bold;
+    padding-top: 12px;
+    line-height: 1.2rem; 
+}
+.right-part button {
+    text-align: center;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: 1px solid #000000;
+    padding: 12px 25px;
+    color: #000000;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.main-news {
+    margin: 50px 0;
+}
+.main-news-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 80px;
+}
+.mn-pic img{
+    border-top-left-radius: 6px;
+    border-top-right-radius:6px;
+    /* overflow: hidden; */
+    width: 100%;
+    box-shadow:  0px 0px 14px rgb(100 99 96);
+}
+.card {
+   display: grid;
+   grid-template-rows: 50% 30% 20%;
+   /* align-items: center; */
+   row-gap: 30px; */
+} 
+.card h4 {
+    text-align: start;
+    /* padding-top: 25px; */
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 1.2rem;
+}
+.card p {
+    text-align: start;
+    padding-top: 20px;
+    font-size: 0.8rem;
+    letter-spacing: 0.8px;
+    line-height: 1.2rem;
+    font-weight: bold;
+    /* padding-bottom: 50px;  */
+}
+a {
+    text-decoration: none;
+}
+.link {
+    margin-bottom: 50px;
+} 
+.link a {
+    display: block;
+    border: none;
+    color: rgb(17, 17, 238);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: transparent;
+    font-weight: bold;
+    /* padding-top: 40px; */
+    transition: all .3s ease; 
+    cursor: pointer;
+    
+}
+.link a:hover {
+    text-align: center;
+    border: 1px solid #181717;  
+    padding: 12px 15px; 
+} 
+@media screen and (max-width: 425px) {
+    body {
+        text-align: center;
+        font-weight: 200;
+    }
+    .navbar {
+        max-width: 320px;
+        /* margin: 10 auto; */
+    }
+    .navbar_list {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* .main-header {
+        max-width: 320px;
+    } */
+
+    .logo {
+        padding-top: 25px;
+        width: 250px;
+    }
+    .header-title {
+        font-size: 1rem;
+    }
+    .header-btn {
+        padding: 12px 20px;
+        font-size: 0.8rem;
+    }
+    .fa-angle-right {
+        padding-left: 5px;
+    }
+
+
+    .professinnel-info {
+        margin: 25px 20px;
+    }
+    .professinnel-info p {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        letter-spacing: 0.8px;
+    }
+    .icon-part-container {
+        grid-template-columns: 1fr;
+        margin: 0 30px;
+        /* gap: 25px; */
+    }
+    .list-icon-part{
+        margin: 40px 0;
+    }
+    .list-icon-part h3 {
+        font-size: 1rem;
+    }
+    .list-icon-part p {
+        font-size: 1.2rem;
+    }
+    .header-news {
+        grid-template-columns: 1fr;
+    }
+    .left-part p {
+        text-align: start;
+        padding-left: 6px;
+        font-size: 0.8rem;
+        letter-spacing: 0.6px;
+    }
+    .right-part button {
+        margin-top: 20px;
+    }
+    .main-news-container {
+        text-align: center;
+        grid-template-columns: 1fr;
+        /* row-gap: 40px; */
+    }
+    .mn-pic img{
+        width: 50%;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+    .card h4 {
+        font-size: 0.9rem;
+        padding-left: 30px;
+        margin: 0;
+    }
+    .card p {
+        padding-top: 15px;
+        padding-left: 30px;
+    }
+    .link a {
+        text-align: start;
+        padding-left: 30px;     
+    }
+}
